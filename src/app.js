@@ -77,7 +77,7 @@ const repositoryIndex = repositories.findIndex (repository => repository.id === 
   return response.status(204).send();
 });
 
-app.post("/repositories/:id/likes", (request, response) => {
+app.post("/repositories/:id/like", (request, response) => {
   const { id } = request.params;
   
   const repositoryIndex = repositories.findIndex (repository => repository.id === id);
